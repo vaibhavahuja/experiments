@@ -8,9 +8,9 @@ import (
 
 type Result string
 
-//this concept is pretty new and cool its mainly a function returning a func
-//to see more about it its called functionClosures because uses a value outside the function
-//idea is if a function is inside a function which uses the value of outside function its called function closure
+//this concept is pretty new and cool it's mainly a function returning a func
+//to see more about it is called functionClosures because uses a value outside the function
+//idea is if a function is inside a function which uses the value of outside function it's called function closure
 
 type Search func(query string) Result
 
@@ -59,7 +59,7 @@ func GoogleV2(query string) (results []Result) {
 	return
 }
 
-//What if we dont want to wait for the complete duration?
+//What if we do not want to wait for the complete duration?
 //GoogleV3 -> solves the problem mentioned above
 
 func GoogleV3(query string) (results []Result) {
@@ -87,7 +87,7 @@ func GoogleV3(query string) (results []Result) {
 //Launch multiple searches at same time and return the first one which returns the response
 
 // How do we avoid discarding result from the slow server.
-// We duplicates to many instance, and perform parallel request.
+// We duplicate to many instance, and perform parallel request.
 
 func First(query string, replicas ...Search) Result {
 	c := make(chan Result)
