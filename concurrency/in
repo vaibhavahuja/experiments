@@ -1,0 +1,18 @@
+skipping  6 length of channel is  5
+worker  2 working on 1
+worker  1 working on 2
+worker  3 working on 3
+skipping  10 length of channel is  5
+worker  3 working on 4
+worker  1 working on 5
+worker  2 working on 7
+skipping  14 length of channel is  5
+skipping  15 length of channel is  5
+worker  2 working on 8
+worker  1 working on 9
+worker  3 working on 11
+skipping  19 length of channel is  5
+skipping  20 length of channel is  5
+worker  3 working on 12
+worker  1 working on 13
+worker  2 working on 16
