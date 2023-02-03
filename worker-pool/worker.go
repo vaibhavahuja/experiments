@@ -31,16 +31,15 @@ func (w Worker) start() {
 
 			// in the dispatcher it fetches the jobQueue from workerPool
 			//and then assigns the job to that jobQueue
-			//should it be if jobqueue is empty only then send?
+			//should it be if jobQueue is empty only then send?
 			//let me try
 
 			//if len(w.jobQueue) == 0 {
 			//oh I get it, it will always be empty here
 			//fmt.Printf("length of the job queue is %d \n", len(w.jobQueue))
-			//registering worker to workerpool
+			//registering worker to workerPool
 			w.workerPool <- w.jobQueue
 			//}
-
 
 			select {
 			//does it block? Yes it does, wait here for a job!!
