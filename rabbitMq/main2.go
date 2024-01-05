@@ -18,7 +18,7 @@ func main() {
 	}
 	defer ch.Close()
 
-	queueName := "test_queue"
+	queueName := "second_direct_queue"
 	msgs, err := ch.Consume(
 		queueName,
 		"",

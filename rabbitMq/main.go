@@ -5,6 +5,8 @@ import (
 	"log"
 )
 
+// req.Header.Set("User-Agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")
+// url := "https://in.bookmyshow.com/sports/india-vs-new-zealand-icc-mens-cwc-2023/seat-layout/aerialcanvas/ET00367570/HCCD/10013?groupEventCode=ET00367219"
 func main() {
 	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	if err != nil {
@@ -18,7 +20,7 @@ func main() {
 	}
 	defer ch.Close()
 
-	queueName := "test_queue"
+	queueName := "first_direct_queue"
 	msgs, err := ch.Consume(
 		queueName,
 		"consumer1",
