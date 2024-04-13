@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- jc https://ak-mediavod.jiocinema.com/bpkvod/jcvod/default/653ac68da6d5148cc0dda999_v4/653ac68da6d5148cc0dda999_v4/index_jc_web_premium_mnp.mpd?hdnts=st=1713041487~exp=1713042087~acl=/bpkvod/jcvod/default/653ac68da6d5148cc0dda999_v4/653ac68da6d5148cc0dda999_v4/*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=rqId=edcc80f3-73af-4334-8bab-eeaf903dc8a6~hmac=7029bd0d864eedae3f4dc572576227ef2b8984a62cbe06c6bf4983edd6ad731c -->
+<!-- Created with Broadpeak BkS350 Origin Packager  (version=1.12.1-28247) -->
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd" type="static" mediaPresentationDuration="PT21M19.040S" maxSegmentDuration="PT3S" minBufferTime="PT2S" profiles="urn:mpeg:dash:profile:isoff-live:2011,urn:com:dashif:dash264">
+    <Period id="1" duration="PT21M19.040S">
+        <!-- <BaseURL>dash/</BaseURL> -->
+        <AdaptationSet id="5" group="2" contentType="video" par="16:9" minBandwidth="200000" maxBandwidth="2300000" maxWidth="1920" maxHeight="1080" segmentAlignment="true" sar="1:1" frameRate="25" mimeType="video/mp4" startWithSAP="1">
+            <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+            <SegmentTemplate timescale="600" initialization="653ac68da6d5148cc0dda999_v4-$RepresentationID$.dash" media="653ac68da6d5148cc0dda999_v4-$RepresentationID$-$Time$.dash">
+                <SegmentTimeline>
+                    <S t="0" d="1200" r="638"/>
+                    <S d="624"/>
+                </SegmentTimeline>
+            </SegmentTemplate>
+            <Representation id="video=200000" bandwidth="200000" width="480" height="270" codecs="avc1.4D4015" scanType="progressive"/>
+        </AdaptationSet>
+    </Period>
+</MPD>
