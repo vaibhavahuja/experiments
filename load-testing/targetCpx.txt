@@ -1,0 +1,3 @@
+POST https://api.cpx.ae/api/auth/ho_login
+Content-Type: application/json
+@bodyCpx.json

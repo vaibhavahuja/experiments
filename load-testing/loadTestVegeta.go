@@ -15,20 +15,24 @@ import (
 // and combine later by vegeta report *.bin
 func main() {
 	rate := vegeta.Rate{
-		Freq: 20,
+		Freq: 500,
 		Per:  1 * time.Second,
 	}
-	duration := 25 * time.Second
+	duration := 30 * time.Second
 	headers := http.Header{}
 	headers.Add("accept", "application/json")
 	headers.Add("Content-Type", "application/json")
+	var ids []int
+	for id := 0; id < 100000; i++ {
+		ids = range(ids, id)
 
-	ids := []int{1, 2, 3, 4, 6, 7, 8, 9, 10}
+	}
+	// ids := []int{1, 2, 3, 4, 6, 7, 8, 9, 10}
 	var allTargets []vegeta.Target
 	for _, id := range ids {
 		allTargets = append(allTargets, vegeta.Target{
 			Method: "POST",
-			URL:    "http://localhost:8080/hello",
+			URL:    "https://api.cpx.ae/api/auth/ho_login",
 			Header: headers,
 			Body:   []byte(fmt.Sprintf("{\"id\":%d}", id)),
 		})
