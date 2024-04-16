@@ -33,7 +33,7 @@ func downloadDashFiles() {
 	for i := 0; i < 1200*50; i += 1200 {
 		wg.Add(1)
 		urlFinal := strings.Replace(url, "$Time$", strconv.Itoa(i), 1)
-		go download(urlFinal, i, wg)
+		go download(urlFinal, "video", i, wg)
 	}
 	wg.Wait()
 }
@@ -49,12 +49,12 @@ func downloadTestAkamaiMp4() {
 		//urlComplete := fmt.Sprintf(url, i)
 		urlComplete := strings.Replace(url, "{number}", strconv.Itoa(i), 1)
 		wg.Add(1)
-		go download(urlComplete, i, wg)
+		go download(urlComplete, "video", i, wg)
 	}
 	wg.Wait()
 }
 
-func download(url string, i int, wg *sync.WaitGroup) {
+func download(url, contentType string, i int, wg *sync.WaitGroup) {
 	if wg != nil {
 		defer wg.Done()
 	}
@@ -76,9 +76,17 @@ func download(url string, i int, wg *sync.WaitGroup) {
 	//extract fileName need to write code for the same
 	var fileName string
 	if i == -1 {
-		fileName = "testing_init.dash"
+		if contentType == "audio" {
+			fileName = "testing_audio_init.dash"
+		} else {
+			fileName = "testing_init.dash"
+		}
 	} else {
-		fileName = fmt.Sprintf("testing_%d.dash", i)
+		if contentType == "audio" {
+			fileName = fmt.Sprintf("testing_audio_%d.dash", i)
+		} else {
+			fileName = fmt.Sprintf("testing_%d.dash", i)
+		}
 	}
 
 	out, err := os.Create(fmt.Sprintf("test-server/test-dash-akamai-stream/%s", fileName))
