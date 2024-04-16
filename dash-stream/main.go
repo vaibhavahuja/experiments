@@ -11,16 +11,16 @@ import (
 	"sync"
 )
 
-func main() {
-	//test one -> successful
-	//downloadTestAkamaiMp4()
-
-	//trying to download dash now - will heavily modify the other files ehh
-	//test two -> successful
-	downloadDashFiles()
-
-	//able to play the downloaded files on my local dash player
-}
+//func main() {
+//	//test one -> successful
+//	//downloadTestAkamaiMp4()
+//
+//	//trying to download dash now - will heavily modify the other files ehh
+//	//test two -> successful
+//	downloadDashFiles()
+//
+//	//able to play the downloaded files on my local dash player
+//}
 
 func downloadDashFiles() {
 	//initUrl := "https://ak-mediavod.jiocinema.com/bpkvod/jcvod/default/653ac68da6d5148cc0dda999_v4/653ac68da6d5148cc0dda999_v4/653ac68da6d5148cc0dda999_v4-video=200000.dash?hdntl=exp=1713127903~acl=%2fbpkvod%2fjcvod%2fdefault%2f653ac68da6d5148cc0dda999_v4%2f653ac68da6d5148cc0dda999_v4%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=c6616ea9c9459638e8515a96bc83c2907b6ead7cb2af2b6fc295aa50d86eeb02"
@@ -71,7 +71,15 @@ func download(url string, i int, wg *sync.WaitGroup) {
 	//parsedUrl, _ := url2.Parse(url)
 	//parsedUrl.RawQuery = ""
 	//fileName := parsedUrl.Path
-	fileName := fmt.Sprintf("653ac68da6d5148cc0dda999_v4-video=200000-%d.dash", i)
+	//fileName := fmt.Sprintf("653ac68da6d5148cc0dda999_v4-video=200000-%d.dash", i)
+
+	//extract fileName need to write code for the same
+	var fileName string
+	if i == -1 {
+		fileName = "testing_init.dash"
+	} else {
+		fileName = fmt.Sprintf("testing_%d.dash", i)
+	}
 
 	out, err := os.Create(fmt.Sprintf("test-server/test-dash-akamai-stream/%s", fileName))
 	if err != nil {

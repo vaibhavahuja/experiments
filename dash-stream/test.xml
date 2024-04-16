@@ -5,9 +5,8 @@
         <BaseURL>dash/</BaseURL>
         <AdaptationSet id="8" group="2" contentType="video" par="16:9" minBandwidth="200000" maxBandwidth="2300000" maxWidth="1920" maxHeight="1080" segmentAlignment="true" sar="1:1" frameRate="25" mimeType="video/mp4" startWithSAP="1">
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
-            <SegmentTemplate timescale="600"
-                             initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017"
-                             media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="600" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d"
+                             media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="1200" r="356"/>
                 </SegmentTimeline>
@@ -20,9 +19,7 @@
             <Representation id="video=2300000" bandwidth="2300000" width="1920" height="1080" codecs="avc1.640028" scanType="progressive"/>
         </AdaptationSet>
         <AdaptationSet id="9" contentType="image" mimeType="image/jpeg">
-            <SegmentTemplate timescale="1" duration="100"
-                             media="$RepresentationID$/tile_$Number$.jpeg?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017"
-                             startNumber="1" endNumber="8"/>
+            <SegmentTemplate timescale="1" duration="100" media="$RepresentationID$/tile_$Number$.jpeg?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" startNumber="1" endNumber="8"/>
             <Representation bandwidth="1000" id="thumbnail" width="3200" height="180">
                 <EssentialProperty schemeIdUri="http://dashif.org/guidelines/thumbnail_tile" value="10x1"/>
             </Representation>
@@ -30,9 +27,7 @@
         <AdaptationSet id="1" group="1" contentType="audio" lang="hi" label="Hindi" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
-            <SegmentTemplate timescale="48000"
-                             initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017"
-                             media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -224,9 +219,7 @@
         <AdaptationSet id="2" group="1" contentType="audio" lang="bn" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Bengali">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000"
-                             initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017"
-                             media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -417,7 +410,7 @@
         <AdaptationSet id="3" group="1" contentType="audio" lang="kn" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Kannada">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -608,7 +601,7 @@
         <AdaptationSet id="4" group="1" contentType="audio" lang="ml" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Malayalam">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -799,7 +792,7 @@
         <AdaptationSet id="5" group="1" contentType="audio" lang="mr" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Marathi">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -990,7 +983,7 @@
         <AdaptationSet id="6" group="1" contentType="audio" lang="ta" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Tamil">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
@@ -1181,7 +1174,7 @@
         <AdaptationSet id="7" group="1" contentType="audio" lang="te" minBandwidth="45377" maxBandwidth="125375" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" label="Telugu">
             <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
             <Role schemeIdUri="urn:mpeg:dash:role:2011" value="dub"/>
-            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713343619~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=19e665031429e87a40e5fced7421f02348090ec8aaf54a1cd1b85596aa209017">
+            <SegmentTemplate timescale="48000" initialization="64a437de48d27972cc952d8e_v10-$RepresentationID$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d" media="64a437de48d27972cc952d8e_v10-$RepresentationID$-$Time$.dash?hdntl=exp=1713353204~acl=%2fbpkvod%2fjcvod%2fdefault%2f64a437de48d27972cc952d8e_v10%2f64a437de48d27972cc952d8e_v10%2f*~id=0352f4ee36d84d0bbd5866754be8ff1d~data=hdntl~hmac=3cf16fa4b54191c225b4238bbcb4136b98ae2870348f91c5924b2f5df3ec531d">
                 <SegmentTimeline>
                     <S t="0" d="96256" r="2"/>
                     <S d="95232"/>
