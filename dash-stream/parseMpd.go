@@ -26,7 +26,7 @@ func main() {
 	}
 
 	//trying to download all segments - just a POC
-	host := "https://ak-mediavod.jiocinema.com/bpkvod/jcvod/default/64a437de48d27972cc952d8e_v10/64a437de48d27972cc952d8e_v10/"
+	host := "https://ak-mediavod.jiocinema.com/bpkvod/vod/default/64aba9ff9a170825b0bf6bd3_v3/64aba9ff9a170825b0bf6bd3_v3/"
 
 	for _, period := range mpd.Period {
 		baseUrl := period.BaseURL[0].Value
@@ -35,9 +35,9 @@ func main() {
 			if *adaptSet.ContentType == "video" {
 				downloadAllVideo(completeUrl, adaptSet)
 			}
-			if *adaptSet.ContentType == "audio" {
-				//downloadAllAudio(completeUrl, adaptSet)
-			}
+			//if *adaptSet.ContentType == "audio" {
+			//	downloadAllAudio(completeUrl, adaptSet)
+			//}
 		}
 	}
 
@@ -51,7 +51,7 @@ func downloadAllAudio(url string, adaptSet *mpd.AdaptationSet) {
 		if id != nil {
 			fmt.Println(*id)
 		}
-		if *id != "audio_hin=45377" {
+		if *id != "audio_hin=45376" {
 			continue
 		}
 
