@@ -1,6 +1,8 @@
 module github.com/vaibhavahuja/experiments/twemproxy
 
-go 1.19
+go 1.21.0
+
+toolchain go1.22.5
 
 require (
 	github.com/go-redis/redis/v8 v8.11.5
