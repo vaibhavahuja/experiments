@@ -71,10 +71,10 @@ func FormPayload() cwt.ClaimsMap {
 	payload := cwt.ClaimsMap{
 		iana.Catu: cwt.ClaimsMap{
 			iana.Host: []any{iana.Exact, "ak-mediavod-cat-poc-staging.jiocinema.com"},
-			iana.Path: []any{iana.Exact, "/jcvod/video/movie/ccp_gangsofwasseypur2_mv_ott/hindi/fhd/h264/dolby_5point1/1717852550/jiocinemanondrmdash-4b182e5feca04a759a3a3d7734f9e5c3/dash-web-premium-plain-a9b3bb9d2a6941b1b18622616fbad3dd/master.mpd"},
+			iana.Path: []any{iana.Exact, "/bpkvod/jcsports/default/65b8f65fd15ee5d0d0ba7ae5_v3/65b8f65fd15ee5d0d0ba7ae5_v3/index_sjc_web_premium.m3u8"},
 		},
 		iana.CatM: []any{"GET"},
-		iana.Exp:  time.Now().Add(-24 * time.Hour).Unix(),
+		iana.Exp:  time.Now().Add(48 * time.Hour).Unix(),
 		//iana.Catalpn: [][]byte{
 		//	[]byte("h2"),
 		//	[]byte("h3"),
